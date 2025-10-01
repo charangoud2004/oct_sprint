@@ -54,3 +54,30 @@ class p4{
     return n1; // n1 is now the GCD
   }
 }
+
+class p5 {
+  public boolean isArmstrong(int n) {
+
+    int digit = 0;
+    int numSum = 0;
+    int compare = n;
+    int comp = n;
+
+    for (; comp > 0; comp /= 10) {
+      digit++;
+    }
+
+    for (; n > 0; n /= 10) {
+      int Num = n % 10;
+      Num = (int) Math.pow(Num, digit);
+
+      numSum = Num + numSum;
+    }
+
+    if (numSum == compare) {
+      return true;
+    }
+
+    return false;
+  }
+}
