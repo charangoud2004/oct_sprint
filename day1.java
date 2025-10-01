@@ -99,3 +99,12 @@ class p8 {
     return N + NnumbersSum(N - 1);
   }
 }
+
+class p10 {
+
+  public int fib(int n) {
+    // your code goes here
+    if (n == 0 || n == 1) return n;
+    return fib(n - 1) + fib(n - 2);
+  }
+}
