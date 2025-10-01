@@ -40,12 +40,12 @@ class p3 {
   }
 }
 
-class p4 {
+class p4{
   public int GCD(int n1, int n2) {
     n1 = Math.abs(n1);
     n2 = Math.abs(n2);
 
-    // Euclidean algorithm
+    // Euclidean algorithm 1
     while (n2 != 0) {
       int temp = n2;
       n2 = n1 % n2;
