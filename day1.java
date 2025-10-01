@@ -11,11 +11,31 @@ class day1 {
 
 class Solution {
     public int reverseNumber(int n) {      
-        int reverse =0;
+        int reverse1 =0;
         for(; n>0; n/=10){
             int digit = n % 10;
-            reverse = reverse * 10 + digit;
+            reverse1 = reverse1 * 10 + digit;
         }
-        return reverse;
+        return reverse1;
     }
+}
+
+class Solution {
+  public boolean isPalindrome(int n) {
+
+    int rev = 0;
+    int check = n;
+
+    for (; n > 0; n /= 10) {
+      int store = n % 10;
+
+      rev = rev * 10 + store;
+    }
+
+    if (rev == check) {
+      return true;
+    }
+
+    return false;
+  }
 }
