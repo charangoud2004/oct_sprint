@@ -37,3 +37,25 @@ class p2 {
   }
 }
 
+class p3 {
+  public boolean isSorted(ArrayList<Integer> nums) {
+    for (int i = 0; i < nums.size() - 1; i++) {
+      if (nums.get(i) > nums.get(i + 1)) {
+        return false;
+      }
+    }
+    return true;
+  }
+}
+
+class p3_1 {
+  public boolean isSorted(ArrayList<Integer> nums) {
+    int up = 0, down = 0;
+    for (int i = 0; i < nums.size() - 1; i++) {
+      int a = nums.get(i), b = nums.get(i + 1);
+      if (a < b) up++;      // breaks descending
+      if (a > b) down++;    // breaks ascending
+    }
+    return up == 0 || down == 0;   // pure ascending OR pure descending
+  }
+}
