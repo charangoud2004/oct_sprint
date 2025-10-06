@@ -50,3 +50,23 @@ class missing_Number {
     return missingNum;
   }
 }
+
+class maxConsecutiveOnes {
+  public int findMaxConsecutiveOnes(int[] nums) {
+
+    int counter = 0;
+    int max_count = 0;
+
+    for (int i = 0; i < nums.length; i++) {
+
+      if (nums[i] == 1) {
+        counter++;
+        max_count = Math.max(max_count, counter);
+      } else {
+        counter = 0;
+      }
+    }
+    return max_count;
+  }
+}
+
