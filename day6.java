@@ -32,3 +32,21 @@ class movingZeroesToEnd_2 {
         }
     }
 }
+
+class missing_Number {
+  public int missingNumber(int[] nums) {
+
+    int N = nums.length;
+    int sum = 0;
+
+    for (int i = 0; i < nums.length; i++) {
+
+      sum = sum + nums[i];
+    }
+
+    int Nsum = (N * (N + 1)) / 2;
+    int missingNum = Nsum - sum;
+
+    return missingNum;
+  }
+}
