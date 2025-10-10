@@ -19,3 +19,18 @@ class p1 {
         return (int) maxi;
     }
 }
+
+class p2 {
+    public int maxProfit(int[] prices) {
+
+        int minPrice = prices[0];   // cheapest day so far
+        int maxProfit = 0;
+
+        for (int i = 1; i < prices.length; i++) {
+            int todayProfit = prices[i] - minPrice;
+            maxProfit = Math.max(maxProfit, todayProfit);
+            minPrice  = Math.min(minPrice, prices[i]);
+        }
+        return maxProfit;
+    }
+}
