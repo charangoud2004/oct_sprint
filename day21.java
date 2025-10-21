@@ -47,3 +47,47 @@ class First_and_last_occurrence {
     return new int[] {start, end};
   }
 }
+
+class Count_Occurrences_in_a_Sorted_Array {
+  public int countOccurrences(int[] arr, int target) {
+    // Your code goes here
+
+    int low = 0;
+    int high = arr.length - 1;
+    int start = -1;
+    int end = -1;
+    int ans = 0;
+
+    while (low <= high) {
+      int mid = low + (high - low) / 2;
+      if (arr[mid] == target) {
+        start = mid;
+        high = mid - 1;
+      } else if (arr[mid] < target) {
+        low = mid + 1;
+      } else {
+        high = mid - 1;
+      }
+    }
+
+    if (start == -1) {
+      return ans;
+    }
+    low = 0;
+    high = arr.length - 1;
+    while (low <= high) {
+      int mid = low + (high - low) / 2;
+      if (arr[mid] == target) {
+        end = mid;
+        low = mid + 1;
+      } else if (arr[mid] < target) {
+        low = mid + 1;
+      } else {
+        high = mid - 1;
+      }
+    }
+
+    ans = end - start + 1;
+    return ans;
+  }
+}
