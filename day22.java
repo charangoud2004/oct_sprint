@@ -45,7 +45,7 @@ class Search_Element_in_a_Rotated_Sorted_Array_2 {
             
             if(nums[low] == nums[mid] && nums[mid] == nums[high]){
                 low = low + 1;
-                high = high + 1;
+                high = high - 1;
                 continue;
 
             }
