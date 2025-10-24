@@ -1,4 +1,8 @@
-class Solution {
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Collections;
+
+class Solution_leaders {
   public List<Integer> leaders(int[] nums) {
     List<Integer> leader = new ArrayList<>();
 

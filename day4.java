@@ -1,4 +1,4 @@
-class p1 {
+class p1_removeDuplicates {
   public int removeDuplicates(int[] nums) {
     int left = 0;
     for (int right = 1; right < nums.length; right++) {
@@ -13,7 +13,7 @@ class p1 {
   }
 }
 
-class Solution {
+class Solution_rotateArrayByOne {
     public void rotateArrayByOne(int[] nums) {
         // Handle edge cases
         if (nums.length <= 1) return;
@@ -28,7 +28,7 @@ class Solution {
     }
 }
 
-class p3 {
+class p3_rotateLeft {
     public void rotateLeft(int[] nums, int k) {
         int n = nums.length;
         k = k % n; // handle cases when k >= n

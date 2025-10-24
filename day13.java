@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 class alternate_pos_and_neg {
     public int[] rearrangeArray(int[] nums) {
         ArrayList<Integer> pos = new ArrayList<>();

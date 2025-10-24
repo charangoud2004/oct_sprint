@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 class Find_Minimum_in_Rotated_Sorted_Array {
     public int findMin(int[] nums) {
 
@@ -16,7 +18,7 @@ class Find_Minimum_in_Rotated_Sorted_Array {
     }
 }
 
-class Find_out_how_many_times_the_array_is_rotated {
+class Find_day24out_how_many_times_the_array_is_rotated {
   public int findKRotation(ArrayList<Integer> nums) {
 
     int low = 0;

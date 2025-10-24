@@ -1,4 +1,4 @@
-class numbers_in_order {
+class numbers_in_order_longestConsecutive {
   public int longestConsecutive(int[] nums) {
     // Arrays.sort(nums);
     for (int i = 0; i < nums.length - 1; i++) {
@@ -33,7 +33,7 @@ class numbers_in_order {
   }
 }
 
-class Subarray_Sum_Equals_K {
+class Subarray_Sum_Equals_K_subarraySum {
     public int subarraySum(int[] nums, int k) {
         int counter = 0;
         for (int i = 0; i < nums.length ; i++) {

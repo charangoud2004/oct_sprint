@@ -1,4 +1,4 @@
-class p1 {
+class p1_maxSubArray {
     public int maxSubArray(int[] nums) {
         long maxi = Long.MIN_VALUE; // maximum sum
         long sum = 0;
@@ -20,7 +20,7 @@ class p1 {
     }
 }
 
-class p2 {
+class p2_maxProfit {
     public int maxProfit(int[] prices) {
 
         int minPrice = prices[0];   // cheapest day so far

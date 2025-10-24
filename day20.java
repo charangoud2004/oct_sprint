@@ -17,7 +17,7 @@ class Search_insert_position {
     }
 }
 
-class Solution {
+class Solution_getFloorAndCeil {
   public int[] getFloorAndCeil(int[] nums, int x) {
     int low = 0;
     int high = nums.length - 1;

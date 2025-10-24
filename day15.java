@@ -1,4 +1,4 @@
-class Solution {
+class Solution_reverse {
   public void reverse(int[] arr, int n) {
     rev(arr, 0, n - 1); // reverse first n elements
   }

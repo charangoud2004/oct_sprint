@@ -1,3 +1,6 @@
+import java.util.Set;
+import java.util.LinkedHashSet;
+
 class skip {
     public int[] unionArray(int[] nums1, int[] nums2) {
         Set<Integer> set = new LinkedHashSet<>();

@@ -1,4 +1,8 @@
-class Solution {
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Collections;
+
+class Solution_generate {
     public List<List<Integer>> generate(int numRows) {
        // Result list to hold all rows
             List<List<Integer>> triangle = new ArrayList<>();

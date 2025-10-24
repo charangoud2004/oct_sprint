@@ -1,4 +1,6 @@
-class p1 {
+import java.util.ArrayList;
+
+class p1_selectionSort {
   public int[] selectionSort(int[] nums) {
     for (int i = 0; i < nums.length - 1; i++) {
       int smallest = i;
@@ -16,7 +18,7 @@ class p1 {
   }
 }
 
-class p2 {
+class p2_secondLargestElement {
   public int secondLargestElement(int[] nums) {
     int max = nums[0];
     int max2 = Integer.MIN_VALUE;
@@ -37,7 +39,7 @@ class p2 {
   }
 }
 
-class p3 {
+class p3_isSorted {
   public boolean isSorted(ArrayList <Integer> nums) {
     for (int i = 0; i < nums.size() - 1; i++) {
       if (nums.get(i) > nums.get(i + 1)) {
@@ -48,7 +50,7 @@ class p3 {
   }
 }
 
-class p3_1 {
+class p3_1_isSorted {
   public boolean isSorted(ArrayList<Integer> nums) {
     int up = 0, down = 0;
     for (int i = 0; i < nums.size() - 1; i++) {
