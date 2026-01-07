@@ -8,8 +8,8 @@ class movingZeroesToEnd_1 {
         int temp = nums[p1];
         nums[p1] = nums[p2];
         nums[p2] = temp;
+         p1++;
       }
-      p1++;
     }
   }
 }
